@@ -6,31 +6,31 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "chegou no pasto e depara com alguns bois machucado, oque vc faz ?",
         alternativas: [
-            "Isso é assustador!",
-            "Isso é maravilhoso!"
+            "levar o gado para mangueira e curar!",
+            "deixar quieto e ir embora!"
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "vc chgou na plantação e se depara om uma praga, oque fazer ?",
         alternativas: [
-            "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-            "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+            "ligar para o agronomo vir analizar e combater a praga ",
+            "ou ignorar a situaçao ",
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "vc ve que tem um boi com bruceloese, oqu vc faz ?",
         alternativas: [
-            "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-            "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores."
+            "dixar ele com o rebanho ",
+            "afatar ele do rebanho e teentar cuidar"
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "vc tem a oportunidade de fazer faculdade de veterinaria mas tem que largar o emprego ?",
         alternativas: [
-            "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-            "Criar uma imagem utilizando um gerador de imagem de IA."
+            "largar o serviço e pegar a oportunidade",
+            "ou perder a oportunidade e continuar o serviço "
         ]
     },
     {
