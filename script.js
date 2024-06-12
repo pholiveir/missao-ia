@@ -1,94 +1,47 @@
+<script src="script.js"></script>
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-
 const perguntas = [
     {
-        enunciado: "chegou no pasto e depara com alguns bois machucado, oque vc faz ?",
-        alternativas: [
-            "levar o gado para mangueira e curar!",
-            "deixar quieto e ir embora!"
+        texto: "Assim que terminou a temporada, o corinthians planeja fazer uma reformulação no elenco , então ele está pensando em contratar dois meias, Quais contratar?",
+        afirmação: [
+            "igor Coronado",
+            "Rodrigo Garro"
         ]
     },
     {
-        enunciado: "vc chgou na plantação e se depara om uma praga, oque fazer ?",
-        alternativas: [
-            "ligar para o agronomo vir analizar e combater a praga ",
-            "ou ignorar a situaçao ",
+          texto: "Com a divida do Corinthians, ele planeja diminuir a divida com a entradado novo presidente, quem seria um bom nome para a presidencia do Corinthians?",
+          afirmação: [
+            "augusto Melo",
+            "André Negão"
         ]
     },
     {
-        enunciado: "vc ve que tem um boi com bruceloese, oqu vc faz ?",
-        alternativas: [
-            "dixar ele com o rebanho ",
-            "afatar ele do rebanho e teentar cuidar"
+      texto: "com a saída do Cassio do Corinthians, o timão busca colocar um goleiro do elenco corintiano,qual seria um bom nome? "
+    ",
+          afirmação: [
+            "Carlos Miguel",
+            "Felipe Longo"
         ]
     },
     {
-        enunciado: "vc tem a oportunidade de fazer faculdade de veterinaria mas tem que largar o emprego ?",
-        alternativas: [
-            "largar o serviço e pegar a oportunidade",
-            "ou perder a oportunidade e continuar o serviço "
+          texto: "Com o fim do Paulistão, o corinthians busca melhorar seu elenco, e com isso busca um novo treinador, Qual seria o melhor nome?",
+          afirmação: [
+            "Antonio Oliveira",
+            "Mano Menezes"
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
-        alternativas: [
-           "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-            "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial."
+          texto: "O corinthians buca um titulo que ainda é inedito na sua enorme pratileira de troféus, e com isso e ele ganhar esse titulo, ele vai se consagrar campeão de tudo, Qual titulo que falta?",
+          afirmação: [
+            "Sudamericana",
+            "Libertadores"
         ]
-    },
-];
-
-let atual = 0;
-let perguntaAtual;
-
-function mostraPergunta() {
-    perguntaAtual = perguntas[atual];const caixaPrincipal = document.querySelector(".caixa-principal");
-const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternativas = document.querySelector(".caixa-alternativas");
-const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector(".texto-resultado");
-
-const perguntas = [
-    {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
-        alternativas: [
-            "Isso é assustador!",
-            "Isso é maravilhoso!"
-        ]
-    },
-    {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
-        alternativas: [
-            "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-            "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-        ]
-    },
-    {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
-        alternativas: [
-            "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-            "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores."
-        ]
-    },
-    {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-        alternativas: [
-            "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-            "Criar uma imagem utilizando um gerador de imagem de IA."
-        ]
-    },
-    {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
-        alternativas: [
-           "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-            "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial."
-        ]
-    },
-];
+    }
+]
 
 let atual = 0;
 let perguntaAtual;
@@ -96,10 +49,16 @@ let perguntaAtual;
 function mostraPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas();
 }
-
-mostraPergunta();
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
+            const botaoAlternativas = document.createElement("button");
+            botaoAlternativas.textContent = alternativa.texto;
+            botaoAlternativas.addEventListener("click", function(){
+                atual++;
+                mostraPergunta();
+            })
+            caixaAlternativas.appendChild(botaoAlternativas);
+    }
 }
-
-mostraPergunta();
