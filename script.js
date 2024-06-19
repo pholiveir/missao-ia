@@ -13,32 +13,32 @@ const perguntas = [
         ]
     },
     {
-          texto: "?",
+          texto: "vc chega na plantação e nota uma praga, oque fazer para solucionar esse problema da melhor forma ?",
           afirmação: [
-            "",
-            ""
+            "chamar um agronomo para analisar a praga ",
+            "ou tentar resolver sozinho "
         ]
     },
     {
-      texto: "? "
+      texto: "Qual é o principal objetivo da rotação de culturas na agronomia?"
     ",
           afirmação: [
-            "",
-            ""
+            "A rotação de culturas ajuda a melhorar a saúde do solo, aumentar a biodiversidade e reduzir a incidência de pragas e doenças"
+            "A rotação de culturas serve apenas para aumentar o custo de produção, sem trazer benefícios significativos para a produtividade agrícola"
         ]
     },
     {
-          texto: "?",
+          texto: "Qual é o principal objetivo da adubação nitrogenada na agricultura?"
           afirmação: [
-            "",
-            ""
+            "A adubação nitrogenada é utilizada para fornecer nitrogênio às plantas, promovendo um crescimento saudável e aumentando a produtividade das culturas"
+            " A adubação nitrogenada é usada para eliminar pragas do solo, como nematoides, melhorando a saúde das plantas de maneira indireta"
         ]
     },
     {
-          texto: "?",
+          texto: "Qual é a principal função da aração do solo na agricultura?"
           afirmação: [
-            "",
-            ""
+            "A aração do solo ajuda a controlar ervas daninhas, promove a aeração e a descompactação do solo, facilitando o crescimento das raízes das plantas"
+            "A aração do solo é realizada para aumentar a acidez do solo, tornando-o mais propício para o cultivo de plantas acidófilas como mirtilos e azáleas"
         ]
     }
 ]
