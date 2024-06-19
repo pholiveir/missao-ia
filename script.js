@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Já marcou sua sobrancelha?",
+        enunciado: "ja pensou em ser pecuarista?",
         alternativas: [
             {
                 texto: "Sim!",
@@ -19,53 +19,53 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Qual modelo de sobrancelha vc acha melhor?",
+        enunciado: "qual melhor boida pra engorda?",
         alternativas: [
             {
-                texto: "Arqueada.",
+                texto: "nelore.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Curvada.",
+                texto: "berdim.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Qual método vc prefere?",
+        enunciado: "qual a melhor vaca de leite?",
         alternativas: [
             {
-                texto: "Pinça.",
+                texto: "Holandês.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Cera.",
+                texto: "Jersey.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Qual procedimento vc acha melhor?",
+        enunciado: "qual o melhor animal pra lida?",
         alternativas: [
             {
-                texto: "Henna.",
+                texto: "equinos.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "micropigmentação.",
+                texto: "muares.",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Como vc prefere a henna? ",
+        enunciado: "qual melhor pasto para o gado de corte? ",
         alternativas: [
             {
-                texto: "Natural.",
+                texto: "Coloniões.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Marcada.",
+                texto: "mato grosso.",
                 afirmacao: "afirmação"
             }
         ]
